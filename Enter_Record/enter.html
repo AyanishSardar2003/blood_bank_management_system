@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Record Input Form</title>
+    <link rel="stylesheet" href="Req_style.css">
+
+    <style>
+        .container{
+            background: linear-gradient(to bottom right, pink, white);
+        }
+        body{
+            background-image: url(bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2> Medical Record Input Form</h2>
+        <form id="medicalForm" action="medical_rec.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="disease">Disease:</label>
+            <input type="text" id="disease" name="disease" required>
+              
+
+
+            <label for="treatmentdescription">Treatment Description:</label>
+            <input type="text" id="treatmentdescription" name="treatmentdescription" required>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>
